@@ -1,0 +1,36 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+h1 {
+    font-size: 2.5em; /* Clear visibility */
+    margin-top: 2%; /* Consistent spacing */
+    margin-bottom: 2%; /* Avoids crowding with buttons */
+    width: 95%; /* Prevents overflow */
+}
+
+.start-button {
+    font-size: 1.8em; /* Slightly smaller text for more text on buttons */
+    padding: 20px 50px; /* Comfortable for tapping */
+    width: 80%; /* Sufficient width to maintain design consistency */
+    margin-top: 1%; /* Spacing between buttons */
+    margin-bottom: 1%; /* Separation from other buttons */
+    background-color: #4CAF50; /* Unified aesthetic with site theme */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #369636; /* Interaction feedback */
+}

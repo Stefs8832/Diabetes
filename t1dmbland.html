@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insulindosering før operation</title>
+    <link rel="stylesheet" href="t1dmmorgen.css">
+</head>
+<body>
+<script>
+// Funktionen til at rulle til det ønskede element
+function scrollToContent(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+// Tilføj event listeners til at håndtere orienteringsskift
+window.addEventListener('orientationchange', function() {
+    // Funktionen scrollToContent kaldes med id'et på det element, der skal rulles til
+    scrollToContent('important-info');
+});
+
+// For at sikre at siden ruller ved initial load hvis det er nødvendigt
+document.addEventListener('DOMContentLoaded', function() {
+    scrollToContent('important-info');
+});
+</script>
+    <div class="centered-content">  
+    <div id="important-info">
+        <p>Aftenen inden operation beholdes vanlige dosis af aften blandingsinsulin.</p>
+	    <p>På operationsmorgenen kan vanlige dosis af morgen blandingsinsulin reduceres med 20%.</p>
+        <p>Eksempel: Patienten får vanligt 20IE blandingsinsulin hver aften samt 20IE blandingsinsulin hver morgen<br> —> Aftenen inden operation tager patienten 20IE blandingsinsulin. På operationsmorgenen tager patienten 16IE blandingsinsulin.</p>
+	     <p>Obs! Man burde generelt undersøge indikationen grundigt for blandingsinsulin til type-1-DM. Hvis patienten har eller er kendt med lavt morgenblodsukker burde skift til langtidsvirkende insulin overvejes kraftigt. Konferér helst med endokrinolog.</p>
+    </div>
+</div>
+</body>
+</html>

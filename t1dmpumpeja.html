@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insulindosering før operation</title>
+    <link rel="stylesheet" href="t1dmmorgen.css">
+</head>
+<body>
+<script>
+// Funktionen til at rulle til det ønskede element
+function scrollToContent(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+// Tilføj event listeners til at håndtere orienteringsskift
+window.addEventListener('orientationchange', function() {
+    // Funktionen scrollToContent kaldes med id'et på det element, der skal rulles til
+    scrollToContent('important-info');
+});
+
+// For at sikre at siden ruller ved initial load hvis det er nødvendigt
+document.addEventListener('DOMContentLoaded', function() {
+    scrollToContent('important-info');
+});
+</script>
+    <div class="centered-content">  
+    <div id="important-info">
+        <p>Patienten pauserer pumpebehandling inden operation.
+	     <p>Patienten tager langtidsinsulin, subkutant, 2-3 timer før pause af pumpe. Dosis uderegnes ud fra de på pumpen programmerede insulinindstillinger. 
+		  <p>De fleste patienter kender sin back-up-dosis af insulin, herunder langtidsinsulin, hvis pumpen skulle slukkes. Spørg dem. Ellers konferér med endokrinolog ved tvivl.</p>
+    </div>
+</div>
+</body>
+</html>

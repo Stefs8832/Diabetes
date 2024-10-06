@@ -1,0 +1,53 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content and footer are spaced out */
+    align-items: center;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+h1 {
+    font-size: 2em; /* Adjusted for better visibility on various devices */
+    margin-top: 2%; /* Space from the top */
+    margin-bottom: 5%; /* Space before the paragraph */
+    width: 95%; /* To avoid text overflow */
+}
+
+p {
+    font-size: 1.2em; /* Suitable text size for readability */
+    margin-top: 0.5%; /* Less space above the text */
+    margin-bottom: 8%; /* Increased bottom margin before the start button */
+    width: 90%; /* Appropriate text width */
+    padding: 0 5%; /* Padding for centering text */
+    word-wrap: break-word; /* Prevents text overflow */
+}
+
+.start-button {
+    font-size: 2.5em; /* Larger text for better visibility */
+    padding: 20px 70px; /* Adequate padding for aesthetics and functionality */
+    width: 80%; /* Appropriate width for the button */
+    margin-top: 1%; /* Top margin */
+    margin-bottom: 5%; /* Increased bottom margin to separate from footer */
+    background-color: #4CAF50; /* Consistent green background */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #369636; /* Darker green on hover */
+}
+
+footer {
+    font-size: 0.5em; /* Smaller font size for less visual impact */
+    color: #666;
+    padding: 10px;
+    width: 100%; /* Full width to cover the bottom area */
+    text-align: center;
+}

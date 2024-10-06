@@ -1,0 +1,35 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+h1 {
+    font-size: 1.5em; /* Consistent with index.css */
+    margin-top: 5%; /* Gives some space from the top */
+    margin-bottom: 5%; /* More space before buttons */
+    width: 95%; /* Prevents text overflow */
+}
+
+.start-button {
+    font-size: 2em; /* Large enough for easy reading and clicking */
+    padding: 20px 70px; /* Adequate padding for aesthetics and functionality */
+    width: 80%; /* Similar to index.css */
+    margin-top: 5%; /* Slight top margin */
+    margin-bottom: 5%; /* Slight bottom margin to separate from the next button */
+    background-color: #4CAF50; /* Green background as in index.css */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #369636; /* Darker green on hover */
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insulindosering før operation</title>
+    <link rel="stylesheet" href="t1dmmorgen.css">
+</head>
+<body>
+<script>
+// Funktionen til at rulle til det ønskede element
+function scrollToContent(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+// Tilføj event listeners til at håndtere orienteringsskift
+window.addEventListener('orientationchange', function() {
+    // Funktionen scrollToContent kaldes med id'et på det element, der skal rulles til
+    scrollToContent('important-info');
+});
+
+// For at sikre at siden ruller ved initial load hvis det er nødvendigt
+document.addEventListener('DOMContentLoaded', function() {
+    scrollToContent('important-info');
+});
+</script>
+    <div class="centered-content">  
+    <div id="important-info">
+        <p>Aftenen inden operationen reduceres dosis af blandingsinsulin med 20% og på operationsmorgenen reduceres dosis af blandingsinsulin med 50%.</p>
+		   <p> Hvis blodsukkerværdien på operationsmorgen er under 6,7 mmol/l --> Seponér morgendosis af blandingsinsulinen helt.</p>
+		  <p> Eksempel: Patienten får 20IE blandingsinsulin både morgen og aften og har et blodsukker på 9,3 mmol/l på operationsmorgenen --> <br> Patienten tager 16IE blandingsinsulin aftenen inden operation og 10IE blandingsinsulin på operationsmorgenen.</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insulindosering før operation</title>
+    <link rel="stylesheet" href="t1dmmorgen.css">
+</head>
+<body>
+<script>
+// Funktionen til at rulle til det ønskede element
+function scrollToContent(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+// Tilføj event listeners til at håndtere orienteringsskift
+window.addEventListener('orientationchange', function() {
+    // Funktionen scrollToContent kaldes med id'et på det element, der skal rulles til
+    scrollToContent('important-info');
+});
+
+// For at sikre at siden ruller ved initial load hvis det er nødvendigt
+document.addEventListener('DOMContentLoaded', function() {
+    scrollToContent('important-info');
+});
+</script>
+    <div class="centered-content">  
+    <div id="important-info">
+        <p>Pausér alt måltidsinsulin efter opstart af faste.</p>
+        <p>På operationsmorgenen gives 1/2-2/3 af vanlige morgeninsulin (både langtidsvirkende insulin+måltidsinsulin) som langtidsvirkende insulin.</p>
+        <p>Eksempel: Patienten får vanligt 20IE langtidsvirkende insulin hver morgen og 6IE hurtigtvirkende insulin inden morgenmad —> Altså i alt 26IE insulin hver morgen —> På operationsmorgenen tager patienten mellem 13-17IE langtidsvirkende insulin.</p>
+    </div>
+</div>
+</body>
+</html>
