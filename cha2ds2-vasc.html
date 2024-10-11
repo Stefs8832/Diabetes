@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHA2DS2-VASc Score Beregner</title>
+    <link rel="stylesheet" href="cha2ds2-vasc.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CHA2DS2-VASc Score Beregner</h1>
+        <form id="cha2ds2vasc-form">
+            <p><input type="checkbox" id="heartFailure"> Congestive heart failure (hjertesvigt/nedsat venstre ventrikelfunktion)</p>
+            <p><input type="checkbox" id="hypertension"> Hypertension</p>
+            <p><input type="checkbox" id="age75"> Alder ≥75 år</p>
+            <p><input type="checkbox" id="diabetes"> Diabetes mellitus</p>
+            <p><input type="checkbox" id="stroke"> Stroke/TIA/systemic embolism.                            (apopleksi/TCI/perifer 			emboli)</p>
+            <p><input type="checkbox" id="vascularDisease"> Vascular disease (myokardieinfarkt, perifer arteriel sygdom, aortaplaques)</p>
+            <p><input type="checkbox" id="age65"> Alder 65-74 år</p>
+            <p><input type="checkbox" id="sexCategory"> Sex category (kvindeligt køn)</p>
+            <button type="button" onclick="calculateScore()">Beregn CHA2DS2-VASc Score</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="cha2ds2-vasc.js"></script>
+</body>
+</html>
