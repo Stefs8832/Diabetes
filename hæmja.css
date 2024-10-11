@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Sikrer vertikal centrering af indhold */
+    align-items: center;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+.centered-content {
+    width: 92%; /* Fylder hele skærmens bredde */
+    max-width: 600px; /* Begrænser maksimal bredde for at forbedre læsbarheden */
+    margin: auto; /* Centrerer indholdet vertikalt og horisontalt */
+    padding: 20px 0; /* Tilføjer plads ovenover og nedenunder indholdet */
+}
+
+p {
+    font-size: 1.5em;
+    margin: 20px 0; /* Ensartet margin for at opretholde afstanden mellem paragraffer */
+    width: 92%; /* Justerer bredden for at optimere tekstuvisning */
+    text-align: center;
+    word-wrap: break-word; /* Forhindrer tekst i at løbe ud over kanten */
+    background-color: #E8F5E9; /* Lysegrøn baggrund for god kontrast */
+    border: 3px solid #4CAF50; /* Mørkegrøn kant for visuel skillelinje */
+    border-radius: 10px; /* Afrundede hjørner for blødere udseende */
+    padding: 15px; /* Intern padding for at fremme læsbarheden */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Skygge for dybdeeffekt */
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 1.2em; /* Mindre skriftstørrelse på små skærme */
+        padding: 10px; /* Mindre padding for at tilpasse sig mindre skærme */
+    }
+
+    .centered-content {
+        padding: 10px 0; /* Reducerer padding på mindre enheder */
+    }
+.start-button {
+    font-size: 1.8em; /* Slightly smaller text for more text on buttons */
+    padding: 20px 50px; /* Comfortable for tapping */
+    width: 80%; /* Sufficient width to maintain design consistency */
+    margin-top: 1%; /* Spacing between buttons */
+    margin-bottom: 1%; /* Separation from other buttons */
+    background-color: #4CAF50; /* Unified aesthetic with site theme */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #369636; /* Interaction feedback */
+}

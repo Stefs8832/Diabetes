@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insulindosering før operation</title>
+    <link rel="stylesheet" href="hæmja.css">
+</head>
+<body>
+<script>
+// Funktionen til at rulle til det ønskede element
+function scrollToContent(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+// Tilføj event listeners til at håndtere orienteringsskift
+window.addEventListener('orientationchange', function() {
+    // Funktionen scrollToContent kaldes med id'et på det element, der skal rulles til
+    scrollToContent('important-info');
+});
+
+// For at sikre at siden ruller ved initial load hvis det er nødvendigt
+document.addEventListener('DOMContentLoaded', function() {
+    scrollToContent('important-info');
+});
+</script>
+    <div class="centered-content">  
+    <div id="important-info">
+        <p>Patienten har: Høj Mortalitetsrisiko</p>
+	     <p>1. valg --> Samtidig opstart af Ufraktioneret Heparin (inkl. bolus) og Trombolyse.</p>
+        <p>Alternativt kan lavmolekylært heparin evt. erstatte ufraktioneret heparin</p>
+	    <p>Hvis trombolyse er uvirksomt eller kontraindiceret bør invasiv behandling og/eller mekanisk cirkulationsstøtte konfereres med center</p>
+		  <p>Behandl. generelt efter ABCDE-principper, herunder iltterapi og kredsløbsunderstøttende behandling</p>
+    </div>
+</div>
+</body>
+</html>
